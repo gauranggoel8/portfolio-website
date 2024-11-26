@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurang Goel - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        :root {
+            --airbnb-red: #FF385C;
+            --airbnb-gray: #717171;
+        }
+        body {
+            font-family: 'Circular', -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+        }
+        .bg-airbnb-red {
+            background-color: var(--airbnb-red);
+        }
+        .text-airbnb-gray {
+            color: var(--airbnb-gray);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-airbnb-red">
+                Gaurang Goel
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="text-airbnb-gray hover:text-black">About</a></li>
+                    <li><a href="#education" class="text-airbnb-gray hover:text-black">Education</a></li>
+                    <li><a href="#contact" class="text-airbnb-gray hover:text-black">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="about" class="grid md:grid-cols-2 gap-8 items-center mb-16">
+            <div>
+                <h1 class="text-4xl font-bold mb-4 text-airbnb-red">Hi, I'm Gaurang</h1>
+                <p class="text-lg text-airbnb-gray mb-6">
+                    I'm a BTech student at Manipal University Jaipur, specializing in Computer and Communication Engineering. 
+                    Passionate about technology and innovation, I'm always eager to learn and explore new opportunities.
+                </p>
+                <a href="#contact" class="bg-airbnb-red text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition">
+                    Get in Touch
+                </a>
+            </div>
+            <div class="flex justify-center">
+                <div class="w-64 h-64 bg-gray-200 rounded-full flex items-center justify-center">
+                    <i data-feather="user" class="w-32 h-32 text-airbnb-gray"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="bg-white shadow-lg rounded-lg p-8 mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-airbnb-red">Education</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold">Manipal University Jaipur</h3>
+                    <p class="text-airbnb-gray">
+                        Bachelor of Technology - Computer and Communication Engineering
+                        <br>
+                        <span class="text-sm">September 2024 - September 2028</span>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Sacred Heart Convent School</h3>
+                    <p class="text-airbnb-gray">
+                        High School
+                        <br>
+                        <span class="text-sm">2021 - 2022</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-6 text-airbnb-red">Contact Me</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i data-feather="phone" class="mr-3 text-airbnb-red"></i>
+                            <span>9259415570</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="mail" class="mr-3 text-airbnb-red"></i>
+                            <span>gauranggoelsweta@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="linkedin" class="mr-3 text-airbnb-red"></i>
+                            <a href="https://www.linkedin.com/in/gaurang-goel-8036b2230" target="_blank" class="hover:underline">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block mb-2 text-airbnb-gray">Name</label>
+                        <input type="text" id="name" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-airbnb-red" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-airbnb-gray">Email</label>
+                        <input type="email" id="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-airbnb-red" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-airbnb-gray">Message</label>
+                        <textarea id="message" rows="4" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-airbnb-red" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-airbnb-red text-white w-full py-3 rounded-lg hover:bg-opacity-90 transition">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-md py-6">
+        <div class="container mx-auto px-4 text-center text-airbnb-gray">
+            © 2024 Gaurang Goel. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
